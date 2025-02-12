@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me</title>
+    <style>
+        body {
+            background-color: #ffebef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .heart-button {
+            background-color: #ff4d6d;
+            color: white;
+            font-size: 2em;
+            border: none;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            animation: pulse 1.5s infinite alternate;
+        }
+        .heart-button:hover {
+            background-color: #e63950;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="third-page.html" class="heart-button">Click Me</a>
+</body>
+</html>
